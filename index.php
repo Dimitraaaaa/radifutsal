@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM login WHERE username='$username' AND password='$password'";
+    $query = "call login('$username', '$password')";
 
     $result = mysqli_query($koneksi, $query);
     if ($result->num_rows > 0) {
@@ -48,13 +48,13 @@ if (isset($_POST['submit'])) {
 
     <style>
         /* .background{
-            background-image: url("./asset/img/futsal.jpg");
+            background-image: url("./asset/img/dzfrey.gif");
             background-size: cover;
             background-repeat: no-repeat;
         } */
         body {
             font-family:sans-serif;
-            background-image: url("./asset/img/gif.gif");
+            background-image: url("./asset/img/dzfrey.gif");
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
             border-radius: 10px;       
         }
         .tombol_login {
-            background-color: green;
+            background-color: black;
             color: white;
             font-size: 11pt;
             width: 100%;
@@ -89,9 +89,9 @@ if (isset($_POST['submit'])) {
             padding:10px 20px ;
         }
         .link {
-            color: green;
+            color: black;
             text-decoration: none;
-            font-size: 11pt;
+            font-size: 13pt;
         }
         .text{
             text-align: center;
