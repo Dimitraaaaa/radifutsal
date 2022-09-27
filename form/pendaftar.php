@@ -53,23 +53,23 @@
 
     <form class="form"action="../input/input_data_pendaftar.php" method="post">
 
-        <label for="">Id pendaftar</label><br> 
+        <label for="">Registrant id</label><br> 
         <input type="text" name="id_pendaftar" id="" rand(9999.11111) readonly>
         <br><br>
-        <label for="">nama pendaftar</label> <br>
+        <label for="">Registrant's Name</label> <br>
         <input type="text" name="nama_pendaftar" id="">
         <br><br>
-        <label for="">nomor hp</label><br>
+        <label for="">Mobile Phone Number</label><br>
         <input type="text" name="nomor_hp" id="">
         <br><br>
-        <label for="">alamat</label><br>
+        <label for="">Address</label><br>
         <textarea name="alamat" id="" cols="50" rows="10"></textarea>
         <br><br>
-        <label for="">jenis lapangan</label><br>
+        <label for="">Field type</label><br>
         <select name="jenis_lapangan" id="">
-            <option value="a">Langan A (matras)</option>
-            <option value="b">Lapangan B (sintetis)</option>
-            <option value="c">Lapangan c (vinnyl</option>
+            <option value="a">Field A (mattress)</option>
+            <option value="b">Field B (synthetic)</option>
+            <option value="c">Field C (vinnyl)</option>
         </select>
         <br><br>
         <label for="">Start Time</label><br>

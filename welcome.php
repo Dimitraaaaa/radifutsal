@@ -66,7 +66,7 @@
 
 <body>
     <ul class="menu"> 
-        <li class="menu-list"><a href="./form/pendaftar.php">Daftar</a></li>
+        <li class="menu-list"><a href="./form/pendaftar.php">List</a></li>
         <li class="menu-list"><a href="./logout.php">Log out</a></li>
     </ul>
     <div class="jumbotron">

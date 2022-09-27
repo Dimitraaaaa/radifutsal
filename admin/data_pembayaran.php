@@ -8,41 +8,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data pembayaran</title>
+    <title>Payment Data</title>
+    <style>
+    .daftar{
+        background-color: brown;
+        padding: 20px;
+        border-radius: 1px;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    input, textarea, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    button{
+        width: 100%;
+        background-color:grey;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        color:black;
+    }
+    .judul{
+        width: 100;
+        padding: 1px 20px;
+        background-color: brown;
+    }
+    .menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 15px;
+        background-color:brown;
+        overflow:hidden;
+    }
+    .menu-list a{
+        display: block;
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    </style>
 </head>
 <body>
-    <a href="../welcome.php">Back To Home</a>
-    <h1>silahkan isi bidang di bawah ini</h1>
-    <form action="../input/input_data_pembayaran.php" method="post">
+<ul class="menu">
+        <li class="menu-list"> <a href="../logout.php">LOGOUT</a> </li>
+        <li class="menu-list"> <a href="data_lapangan.php">isi data lapangan</a> </li>
+</ul>
+<div class="judul"> <h1> silahkan</h1> </div>
+<form class="daftar" action="../input/input_data_pembayaran.php"method="post">
 
-    <label for="">id pembayaran</label><br>
+    <label for="">Payment Id</label><br>
     <input type="text" name ="id_pembayaran" id="">
     <br><br>
-    <label for="">id pendaftar</label><br>
+    <label for="">Registrant Id</label><br>
     <input type="text" name ="id_pendaftar" id="">
     <br><br>
-    <label for="">jenis lapangan</label><br>
+    <label for="">Field Type</label><br>
     <select name="jenis_lapangan" id="">
-        <option value="a">lapangan a (matras)</option>
-        <option value="b">lapangan b (sistetis)</option>
-        <option value="c">lapangan c (vinyl)</option>
+        <option value="a">Field A (mattress)</option>
+        <option value="b">Field B (synthetic)</option>
+        <option value="c">Field C (vinnyl)</option>
     </select>
     <br><br>
-    <label for="">jenis pembayaran</label>
+    <label for="">Type of Payment</label>
     <select name="jenis_pembayaran" id="">
-        <option value="cash">cash</option>
-        <option value="transfer">transfer</option>
+        <option value="cash">Cash</option>
+        <option value="transfer">Transfer</option>
     </select>
     <br><br>
-    <label for="">nominal pembayaran</label><br>
+    <label for="">Payment Amount</label><br>
     <input type="text" name="nominal_pembayaran" id="">
     <br><br>
     <select name="status_pembayaran" id="">
         <option value="...">...</option>
-        <option value="lunas">lunas</option>
+        <option value="lunas">Paid Off</option>
     </select>
 
-        <button type="submit">kirim</button>
+        <button type="submit">Send</button>
     </form>
     
 </body>
