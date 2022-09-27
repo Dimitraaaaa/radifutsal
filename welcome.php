@@ -15,7 +15,7 @@
             list-style-type: none;
             overflow: hidden;
             background-color: brown;
-            margin:0 543px;
+            margin:0px;
             padding:0px;
         }
         .menu-list{
