@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
             <h4 style="color: red;"><?= $_SESSION['error'] ?></h4>
         </div>
         <div class="kotak_login">
-            <p class="judul">LOG in to continue</p>
+            <p class="judul">Log in to continue</p>
    
             <form action="" method="post">
 
@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
                 <br><br>
                 <button class="tombol_login" name="submit" class="btn">Login</button>
 
-                <p class="text">you don't have an account yet? <a href="../" class="link">register</a></p>
+                <p class="text">You don't have an account yet? <a href="./form/registrasi.php" class="link">register</a></p>
             </form>
         </div>
      <!-- </div> -->

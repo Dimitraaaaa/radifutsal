@@ -10,14 +10,14 @@
     <title>form pendaftar</title>
     <style>
         body{
-            margin:0;
-            padding:0;
+            background-color: #191414;
         
         }
          .form{
-            background-color:brown;
+            background-color: #191414;
             padding:20px;
             border-radius:5px;
+            color:#1DB954;
         }
         input, textarea, select{
             width:100%;
@@ -27,18 +27,22 @@
             border:solid #ccc;
             border-radius:3px;
             box-sizing: border-box;
+            
         }
         button{
             width:100%;
-            background-color: grey;
+            background-color:#1DB954;
             padding:14px 20px;
             margin:8px 0;
             border:none;
             border-radius:5px;
             cursor:pointer;
             font-size:16px;
-            color:white;
+            color:#191414;
 
+        }
+        h1 {
+            color:#1DB954;
         }
 
 
@@ -54,7 +58,7 @@
     <form class="form"action="../input/input_data_pendaftar.php" method="post">
 
         <label for="">Registrant id</label><br> 
-        <input type="text" name="id_pendaftar" id="" rand(9999.11111) readonly>
+        <input type="text" name="id_pendaftar" id="" value="<?= rand(0000, 9999)?>" readonly>
         <br><br>
         <label for="">Registrant's Name</label> <br>
         <input type="text" name="nama_pendaftar" id="">

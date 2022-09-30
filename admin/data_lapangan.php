@@ -10,8 +10,9 @@
     <title>Data lapangan</title>
     <style>
     .daftar{
-        background-color: brown;
+        background-color: #191414;
         padding: 20px;
+        color: #1DB954;
         border-radius: 1px;
     }
     body{
@@ -29,30 +30,31 @@
     }
     button{
         width: 100%;
-        background-color:grey;
+        background-color:#1DB954;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
-        color:black;
+        color:#191414;
     }
     .judul{
         width: 100;
         padding: 1px 20px;
-        background-color: brown;
+        background-color:#191414;
+        color:#1DB954;
     }
     .menu{
         list-style-type: none;
         margin: 0;
         padding: 15px;
-        background-color:brown;
+        background-color: #191414;
         overflow:hidden;
     }
     .menu-list a{
         display: block;
-        color: black;
+        color:#1DB954;
         padding: 10px 10px;
         text-decoration: none;
         font-size: 20px;
@@ -62,14 +64,13 @@
 <body>
 <body>
    <ul class="menu">
-        <li class="menu-list"> <a href="../logout.php">LOGOUT</a> </li>
-        <li class="menu-list"> <a href="data_lapangan.php">isi data lapangan</a> </li>
+        <li class="menu-list"> <a href="welcome.php">Back To Home</a> </li>
 </ul>
-<div class="judul"> <h1> silahkan</h1> </div>
-<form class="daftar" action="../input/input_data_lapangan.php"method="post">
+<div class="judul"> <h1> Please fill in the data below</h1> </div>
+<form class="daftar" action="../input/input_data_lapangan.php" method="post">
     
         <label for="">Field Id</label><br>
-        <input type="text" name="id_lapangan" id="">
+        <input type="text" name="id_lapangan" id="" value="<?= rand(0000,9999)?>" readonly>
         <br><br>
         <label for="">Field Type</label><br>
         <select name="jenis_lapangan" id="">
@@ -79,8 +80,9 @@
         </select>
         <br><br>
         <label for="">Field Type</label><br>
-            <select name="type_lapangan" id="">mattress
-            <option value="sintetis">synthetic</option>
+            <select name="type_lapangan" id="">
+            <option value="Matteres">Mattress</option>
+            <option value="sintetis">Synthetic</option>
             <option value="vinyl">vinnyl</option>
         </select>
         <br><br>

@@ -11,9 +11,10 @@
     <title>Payment Data</title>
     <style>
     .daftar{
-        background-color: brown;
+        background-color: #191414;
         padding: 20px;
         border-radius: 1px;
+        color: #1DB954;
     }
     body{
         margin: 0;
@@ -30,30 +31,31 @@
     }
     button{
         width: 100%;
-        background-color:grey;
+        background-color:#1DB954;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
-        color:black;
+        color:#191414;
     }
     .judul{
         width: 100;
         padding: 1px 20px;
-        background-color: brown;
+        background-color: #191414;
+        color:#1DB954;
     }
     .menu{
         list-style-type: none;
         margin: 0;
         padding: 15px;
-        background-color:brown;
+        background-color:#191414;
         overflow:hidden;
     }
     .menu-list a{
         display: block;
-        color: black;
+        color:#1DB954 ;
         padding: 10px 10px;
         text-decoration: none;
         font-size: 20px;
@@ -62,17 +64,16 @@
 </head>
 <body>
 <ul class="menu">
-        <li class="menu-list"> <a href="../logout.php">LOGOUT</a> </li>
-        <li class="menu-list"> <a href="data_lapangan.php">isi data lapangan</a> </li>
+        <li class="menu-list"> <a href="welcome.php">Back To Home</a> </li>
 </ul>
-<div class="judul"> <h1> silahkan</h1> </div>
+<div class="judul"> <h1> Please Fill In The fields Below</h1> </div>
 <form class="daftar" action="../input/input_data_pembayaran.php"method="post">
 
     <label for="">Payment Id</label><br>
-    <input type="text" name ="id_pembayaran" id="">
+    <input type="text" name ="id_pembayaran" id="" value="<?= rand(0000, 9999)?>" readonly>
     <br><br>
     <label for="">Registrant Id</label><br>
-    <input type="text" name ="id_pendaftar" id="">
+    <input type="text" name ="id_pendaftar" id="" value="<?= rand(0000, 9999)?>" readonly>
     <br><br>
     <label for="">Field Type</label><br>
     <select name="jenis_lapangan" id="">

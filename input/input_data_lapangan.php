@@ -7,7 +7,11 @@
 
     $insert = mysqli_query($koneksi,"INSERT INTO data_lapangan SET id_lapangan ='$id_lapangan', jenis_lapangan ='$jenis_lapangan', type_lapangan='$type_lapangan'");
     if($insert == true){
-        header('location: ../welcome.php');
+        $message = 'Your message has been received, thank you';
+        echo "<SCRIPT> //not showing me this
+        alert('$message')
+        window.location.replace('../admin/welcome.php');
+        </SCRIPT>";
     }
     else{
         echo "<script>alert('gagal input data lapangan)</script>";

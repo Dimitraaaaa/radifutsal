@@ -11,10 +11,14 @@
     $insert = mysqli_query($koneksi,"INSERT INTO data_pembayaran SET id_pembayaran ='$id_pembayaran', id_pendaftar ='$id_pendaftar', 
     jenis_lapangan ='$jenis_lapangan', jenis_pembayaran ='$jenis_pembayaran', nominal_pembayaran = '$nominal_pembayaran', status_pembayaran='$status_pembayaran'");
     if($insert == true){
-        header('location: ../welcome.php');
+        $message = 'Your message has been received, thank you';
+        echo "<SCRIPT> //not showing me this
+            alert('$message')
+            window.location.replace('../admin/welcome.php');
+        </SCRIPT>";
     }
     else{
-        echo "<script>alert('gagal input data lapangan)</script>";
+        echo "<script>alert('gagal input data lapangan')</script>";
     }
     
 ?>
